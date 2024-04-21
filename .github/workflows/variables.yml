@@ -7,9 +7,10 @@ env:
   ACCESS_ID: ${{ vars.ACCESS_ID }}
 
 jobs:
-  build:
+  docker:
     runs-on: ubuntu-latest
 
     steps:
     - name: Echo ACCESS_ID
       run: echo $ACCESS_ID
+
